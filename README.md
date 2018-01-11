@@ -1,6 +1,6 @@
 # node-vigil-reporter
 
-[![Build Status](https://img.shields.io/travis/valeriansaliou/node-vigil-reporter/master.svg)](https://travis-ci.org/valeriansaliou/node-vigil-reporter) [![Test Coverage](https://img.shields.io/coveralls/valeriansaliou/node-vigil-reporter/master.svg)](https://coveralls.io/github/valeriansaliou/node-vigil-reporter?branch=master) [![NPM](https://img.shields.io/npm/v/vigil-control.svg)](https://www.npmjs.com/package/vigil-control) [![Downloads](https://img.shields.io/npm/dt/vigil-control.svg)](https://www.npmjs.com/package/vigil-control)
+[![Build Status](https://img.shields.io/travis/valeriansaliou/node-vigil-reporter/master.svg)](https://travis-ci.org/valeriansaliou/node-vigil-reporter) [![Test Coverage](https://img.shields.io/coveralls/valeriansaliou/node-vigil-reporter/master.svg)](https://coveralls.io/github/valeriansaliou/node-vigil-reporter?branch=master) [![NPM](https://img.shields.io/npm/v/vigil-reporter.svg)](https://www.npmjs.com/package/vigil-reporter) [![Downloads](https://img.shields.io/npm/dt/vigil-reporter.svg)](https://www.npmjs.com/package/vigil-reporter)
 
 **Vigil Reporter for Node. Used in pair with Vigil, the Microservices Status Page.**
 
