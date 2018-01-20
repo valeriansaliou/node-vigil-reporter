@@ -6,8 +6,6 @@
 
 Vigil Reporter is used to actively submit health information to Vigil from your apps. Apps are best monitored via application probes, which are able to report detailed system information such as CPU and RAM load. This lets Vigil show if an application host system is under high load.
 
-**🚨 Vigil Reporter is currently Work In Progress (WIP). Stable version is coming soon (2 months ETA).**
-
 ## Who uses it?
 
 <table>
@@ -29,7 +27,31 @@ Alternatively, you can run `npm install vigil-reporter --save`.
 
 ## How to use?
 
-**🚨 Help section coming soon.**
+### 1. Create reporter
+
+`vigil-reporter` can be instanciated as such:
+
+```javascript
+var VigilReporter = require("vigil-reporter").VigilReporter;
+
+var vigilReporter = new VigilReporter({
+  url        : "https://status.example.com",  // `page_url` from Vigil `config.cfg`
+  token      : "YOUR_TOKEN_SECRET",           // `reporter_token` from Vigil `config.cfg`
+  probe_id   : "relay",                       // Probe ID containing the parent Node for Replica
+  node_id    : "socket-client",               // Node ID containing Replica
+  replica_id : "192.168.1.10",                // Unique Replica ID for instance (ie. your IP on the LAN)
+  interval   : 30,                            // Reporting interval (in seconds; defaults to 30 seconds if not set)
+  console    : require("console")             // Console instance if you need to debug issues
+});
+```
+
+### 2. Teardown reporter
+
+If you need to teardown an active reporter, you can use the `end()` method to unbind it.
+
+```javascript
+vigilReporter.end();
+```
 
 ## What is Vigil?
 
