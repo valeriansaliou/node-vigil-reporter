@@ -29,7 +29,7 @@ Alternatively, you can run `npm install vigil-reporter --save`.
 
 ### 1. Create reporter
 
-`vigil-reporter` can be instanciated as such:
+`vigil-reporter` can be instantiated as such:
 
 ```javascript
 var VigilReporter = require("vigil-reporter").VigilReporter;
