@@ -126,4 +126,27 @@ describe("vigil-reporter", function() {
       }
     );
   });
+
+  describe("reporter", function() {
+    it("should report metrics after a few seconds", function(done) {
+      this.timeout(20000)
+
+      var vigilReporter = new VigilReporter({
+        url        : "http://localhost:8080",
+        token      : "REPLACE_THIS_WITH_A_SECRET_KEY",
+        probe_id   : "relay",
+        node_id    : "socket-client",
+        replica_id : "192.168.1.10",
+        console    : require("console")
+      });
+
+      setTimeout(function() {
+        assert.equal(
+          vigilReporter.end(), true, "Reporter should be ended"
+        );
+
+        done();
+      }, 15000);
+    });
+  });
 });
