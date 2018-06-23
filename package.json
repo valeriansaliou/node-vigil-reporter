@@ -1,7 +1,7 @@
 {
   "name": "vigil-reporter",
   "description": "Vigil Reporter for Node. Used in pair with Vigil, the Microservices Status Page.",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "homepage": "https://github.com/valeriansaliou/node-vigil-reporter",
   "license": "MIT",
   "author": {
