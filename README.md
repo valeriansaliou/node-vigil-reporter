@@ -44,7 +44,7 @@ var vigilReporter = new VigilReporter({
   console    : require("console"),            // Console instance if you need to debug issues
 
   tuning     : {                              // Optional tuning options
-    use_active_memory : false                        // Set to `true` if you want to calculate RAM usage based on "active" instead of default "used"
+    use_active_memory : false                 // Set to `true` if you want to calculate RAM usage based on "active" instead of default "used"
   }
 });
 ```
