@@ -1,6 +1,6 @@
 # node-vigil-reporter
 
-[![Build Status](https://img.shields.io/travis/valeriansaliou/node-vigil-reporter/master.svg)](https://travis-ci.org/valeriansaliou/node-vigil-reporter) [![Test Coverage](https://img.shields.io/coveralls/valeriansaliou/node-vigil-reporter/master.svg)](https://coveralls.io/github/valeriansaliou/node-vigil-reporter?branch=master) [![NPM](https://img.shields.io/npm/v/vigil-reporter.svg)](https://www.npmjs.com/package/vigil-reporter) [![Downloads](https://img.shields.io/npm/dt/vigil-reporter.svg)](https://www.npmjs.com/package/vigil-reporter)
+[![Build Status](https://img.shields.io/travis/valeriansaliou/node-vigil-reporter/master.svg)](https://travis-ci.org/valeriansaliou/node-vigil-reporter) [![Test Coverage](https://img.shields.io/coveralls/valeriansaliou/node-vigil-reporter/master.svg)](https://coveralls.io/github/valeriansaliou/node-vigil-reporter?branch=master) [![NPM](https://img.shields.io/npm/v/vigil-reporter.svg)](https://www.npmjs.com/package/vigil-reporter) [![Downloads](https://img.shields.io/npm/dt/vigil-reporter.svg)](https://www.npmjs.com/package/vigil-reporter) [![Buy Me A Coffee](https://img.shields.io/badge/buy%20me%20a%20coffee-donate-yellow.svg)](https://www.buymeacoffee.com/valeriansaliou)
 
 **Vigil Reporter for Node. Used in pair with Vigil, the Microservices Status Page.**
 
