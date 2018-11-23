@@ -6,6 +6,8 @@
 
 Vigil Reporter is used to actively submit health information to Vigil from your apps. Apps are best monitored via application probes, which are able to report detailed system information such as CPU and RAM load. This lets Vigil show if an application host system is under high load.
 
+**🇭🇺 Crafted in Budapest, Hungary.**
+
 ## Who uses it?
 
 <table>
