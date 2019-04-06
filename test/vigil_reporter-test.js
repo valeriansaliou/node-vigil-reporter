@@ -33,28 +33,6 @@ describe("vigil-reporter", function() {
       );
     });
 
-    it("should succeed creating an instance with tuning options", function() {
-      assert.doesNotThrow(
-        function() {
-          new VigilReporter({
-            url        : "http://localhost:8080",
-            token      : "REPLACE_THIS_WITH_A_SECRET_KEY",
-            probe_id   : "relay",
-            node_id    : "socket-client",
-            replica_id : "192.168.1.10",
-            interval   : 30,
-            console    : require("console"),
-
-            tuning     : {
-              use_active_memory : true
-            }
-          });
-        },
-
-        "VigilReporter should not throw on tuning options"
-      );
-    });
-
     it("should fail creating an instance with missing URL", function() {
       assert.throws(
         function() {

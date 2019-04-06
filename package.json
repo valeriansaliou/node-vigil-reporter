@@ -1,7 +1,7 @@
 {
   "name": "vigil-reporter",
   "description": "Vigil Reporter for Node. Used in pair with Vigil, the Microservices Status Page.",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "homepage": "https://github.com/valeriansaliou/node-vigil-reporter",
   "license": "MIT",
   "author": {
@@ -29,9 +29,6 @@
   "scripts": {
     "test": "check-build && istanbul cover _mocha",
     "coveralls": "istanbul cover _mocha --report lcovonly && cat ./coverage/lcov.info | coveralls"
-  },
-  "dependencies": {
-    "systeminformation": "3.51.4"
   },
   "devDependencies": {
     "check-build": "2.8.2",
