@@ -49,10 +49,16 @@ var vigilReporter = new VigilReporter({
 
 ### 2. Teardown reporter
 
-If you need to teardown an active reporter, you can use the `end()` method to unbind it.
+If you need to teardown an active reporter, you can use the `end(options)` method to unbind it (`options` is optional).
 
 ```javascript
-vigilReporter.end();
+vigilReporter.end({
+  done  : function(error) {
+    // Handle 'ended' event there (error should be 'null')
+  },
+
+  flush : false  // Whether to flush replica from Vigil upon teardown (boolean; defaults to 'false' if not set)
+});
 ```
 
 ## What is Vigil?

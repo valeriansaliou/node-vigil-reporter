@@ -129,7 +129,7 @@ describe("vigil-reporter", function() {
 
   describe("reporter", function() {
     it("should report metrics after a few seconds", function(done) {
-      this.timeout(20000)
+      this.timeout(20000);
 
       var vigilReporter = new VigilReporter({
         url        : "http://localhost:8080",
@@ -147,6 +147,35 @@ describe("vigil-reporter", function() {
 
         done();
       }, 15000);
+    });
+
+    it("should flush replica on teardown after a few seconds", function(done) {
+      this.timeout(5000);
+
+      var vigilReporter = new VigilReporter({
+        url        : "http://localhost:8080",
+        token      : "REPLACE_THIS_WITH_A_SECRET_KEY",
+        probe_id   : "relay",
+        node_id    : "socket-client",
+        replica_id : "192.168.1.10",
+        console    : require("console")
+      });
+
+      setTimeout(function() {
+        vigilReporter.end({
+          flush : true,
+
+          done  : function(error) {
+            assert.equal(
+              (error || {}).message,
+              "Flush failed",
+              "Reporter replica should fail on flush"
+            );
+
+            done();
+          }
+        });
+      }, 3000);
     });
   });
 });
